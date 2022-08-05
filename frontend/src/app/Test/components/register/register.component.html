@@ -1,0 +1,31 @@
+<div class="container pt-5">
+    <div class=" row justify-content-sm-center pt-5">
+       <div class="col-sm  shadow round pb-3">
+        <form [formGroup]="myform">
+          <div class="form-group">
+           
+            <input type="text" class="form-control" placeholder="Enter name" formControlName="name">
+            <small  *ngIf="myform.get('name').invalid && myform.get('name').touched"  class="text-danger">Name is required</small>
+            </div>
+          <br/>
+          <div class="form-group">
+          
+            <input type="email" class="form-control"  placeholder="Enter email"formControlName="email">
+            <small *ngIf="myform.get('email').invalid && myform.get('email').touched" class="text-danger">Email is required</small>
+          </div>
+          <br/>
+          <div class="form-group">
+          
+            <input type="password" class="form-control"  placeholder="Enter password"formControlName="password">
+            <small *ngIf="myform.get('password').invalid && myform.get('password').touched"  class="text-danger">Password is required</small>
+          </div>
+         
+          <br/>
+          <button [disabled]="myform.invalid"  type="button"class='btn-primary' (click)="onSubmit()" >Submit</button>
+        </form>
+  
+  
+       </div>
+    </div>
+  
+  </div>

@@ -1,0 +1,1 @@
+{"version":3,"file":"emailverification.schema.js","sourceRoot":"","sources":["../../../src/user/model/emailverification.schema.ts"],"names":[],"mappings":";;;AAAA,qCAAqC;AAExB,QAAA,uBAAuB,GAAG,IAAI,QAAQ,CAAC,MAAM,CAAC;IACzD,KAAK,EAAE,MAAM;IACb,UAAU,EAAE,MAAM;IAClB,SAAS,EAAE,IAAI;CAChB,CAAC,CAAC"}
