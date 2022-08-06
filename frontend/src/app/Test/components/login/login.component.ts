@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
 
   myform:any
 
+  log='Login'
   constructor(
     private authservice:AuthService,
     private router:Router
@@ -30,6 +31,7 @@ export class LoginComponent implements OnInit {
     this.authservice.login(this.myform.value)
     .subscribe((res)=>{
         console.log(res)
+        this.router.navigate(['/dashboard'])
       }
     )
     this.myform.reset()
